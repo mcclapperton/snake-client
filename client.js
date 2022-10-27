@@ -10,14 +10,6 @@ const connect = function () {
   conn.on("connect", () => {
     console.log(`ready to rock n roll - cxn est.`);
     conn.write(`Name: MEC`);
-    //  ` setInterval(
-    //     (funk = () => {
-    //       conn.write("Move: up");
-    //       conn.write("Move: right");
-    //       conn.write("Move: down");
-    //     }),
-    //     500
-    //   );`
   });
   conn.on("data", (data) => {
     console.log(data);
